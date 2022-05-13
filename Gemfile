@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-gem 'discorb'
 gem 'discordrb', github: 'shardlab/discordrb', branch: 'threads'
 gem 'dotenv'
 gem 'rubocop', require: false
