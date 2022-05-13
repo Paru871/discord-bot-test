@@ -7,7 +7,7 @@ bot = Discordrb::Bot.new token: ENV['DISCORD_BOT_TOKEN']
 array = []
 
 bot.reaction_add do |event|
-  logger.debug 'reaction added'
+  puts 'reaction added'
   hash = {}
   hash[:emoji] = event.emoji.name
   hash[:channel_id] = event.message.channel.id
@@ -17,11 +17,11 @@ bot.reaction_add do |event|
   hash[:time] = Time.now
   hash[:type] = 'add'
   array << hash
-  logger.debug array
+  puts array
 end
 
 bot.reaction_remove do |event|
-  logger.debug 'reaction removed'
+  puts 'reaction removed'
   hash = {}
   hash[:emoji] = event.emoji.name
   hash[:channel_id] = event.message.channel.id
@@ -31,7 +31,7 @@ bot.reaction_remove do |event|
   hash[:time] = Time.now
   hash[:type] = 'remove'
   array << hash
-  logger.debug array
+  puts array
 end
 
 bot.run
