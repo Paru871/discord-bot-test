@@ -1,21 +1,15 @@
-GIT
-  remote: https://github.com/shardlab/discordrb.git
-  revision: a3d30b57471e3605d13d3ab3678d35bd4525d1ca
-  branch: threads
-  specs:
-    discordrb (3.4.2)
-      discordrb-webhooks (~> 3.4.2)
-      ffi (>= 1.9.24)
-      opus-ruby
-      rest-client (>= 2.0.0)
-      websocket-client-simple (>= 0.3.0)
-    discordrb-webhooks (3.4.2)
-      rest-client (>= 2.0.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.2)
+    discordrb (3.4.0)
+      discordrb-webhooks (~> 3.3.0)
+      ffi (>= 1.9.24)
+      opus-ruby
+      rest-client (>= 2.0.0)
+      websocket-client-simple (>= 0.3.0)
+    discordrb-webhooks (3.3.0)
+      rest-client (>= 2.1.0.rc1)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
     dotenv (2.7.6)
@@ -34,14 +28,14 @@ GEM
     parser (3.1.2.0)
       ast (~> 2.4.1)
     rainbow (3.1.1)
-    regexp_parser (2.3.1)
+    regexp_parser (2.4.0)
     rest-client (2.1.0)
       http-accept (>= 1.7.0, < 2.0)
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
     rexml (3.2.5)
-    rubocop (1.29.0)
+    rubocop (1.29.1)
       parallel (~> 1.10)
       parser (>= 3.1.0.0)
       rainbow (>= 2.2.2, < 4.0)
@@ -70,13 +64,12 @@ GEM
 
 PLATFORMS
   x86_64-darwin-21
-  x86_64-linux
 
 DEPENDENCIES
-  discordrb!
+  discordrb
   dotenv
   rubocop
   rubocop-fjord
 
 BUNDLED WITH
-   2.3.12
+   2.3.13

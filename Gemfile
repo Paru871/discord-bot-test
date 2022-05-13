@@ -1,8 +1,11 @@
 # frozen_string_literal: true
 
-gem 'discordrb', github: 'shardlab/discordrb', branch: 'threads'
+source "https://rubygems.org"
+
+# gem "rails"
+gem 'discordrb'
 gem 'dotenv'
-gem 'rubocop', require: false
+gem 'rubocop'
 
 group :development do
   gem 'rubocop-fjord', require: false
