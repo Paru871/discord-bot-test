@@ -11,3 +11,5 @@ gem 'rubocop'
 group :development do
   gem 'rubocop-fjord', require: false
 end
+
+ruby "3.0.4"
