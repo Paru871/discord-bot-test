@@ -3,7 +3,8 @@
 source "https://rubygems.org"
 
 # gem "rails"
-gem 'discordrb'
+# gem 'discordrb'
+gem 'discordrb', github: 'shardlab/discordrb', branch: 'threads'
 gem 'dotenv'
 gem 'rubocop'
 
